@@ -11,12 +11,21 @@ import org.springframework.web.bind.annotation.ResponseBody;
 
 public class index_ccont{
   
-	@RequestMapping("/")
+	@RequestMapping("/index")
    public String printHello() {
     
  
       return "index";
    }
+	
+	@RequestMapping("")
+	   public String index() {
+	    
+	 
+	      return "index";
+	   }
+	
+	
  
 	@RequestMapping("/contactus")
 	
@@ -49,4 +58,12 @@ public class index_ccont{
 	 
 	      return "signup";
 	   }
+	
+	@RequestMapping("/allproducts")
+	
+	   public String printHello5() {
+	    
+	 
+	      return "allproducts";
+	}
 }

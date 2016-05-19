@@ -1,13 +1,6 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>Music Hub</title>
-  
-  <link rel="stylesheet" href="css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
-  <script src="js/bootstrap.min.js"></script>
-
-</head>
+<%@include file="header.jsp" %>
 <body>
 
 
@@ -24,13 +17,14 @@
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
     <ul class="nav navbar-nav">
-      <li><a href="index.jsp">Home</a></li>
-      <li><a href="#">About Us</a></li>
-      <li><a href="#">Contact Us</a></li>
+      <li><a href="index">Home</a></li>
+      <li><a href="aboutus">About Us</a></li>
+           <li><a href="contactus">Contact Us</a></li>
+                     <li><a href="allproducts">All products</a></li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
-      <li><a href="#">Login</a></li>
-      <li><a href="#">SignUp</a></li>
+      <li class="active"><a href="signin">Login</a></li>
+      <li><a href="signup">SignUp</a></li>
       
     </ul>
   </div>
@@ -52,10 +46,14 @@
 					
 					
 <br></br><br></br>
-<footer class="container-fluid text-center">
-  <p><b>@copyright MISS KAUR</b></p>
-</footer>
-
+					
+<br></br><br></br>
+					
+<br></br><br></br>
+					
+<br></br><br></br>
+					
+<%@include file="footer.jsp" %>   
 
 
 </body>

@@ -1,11 +1,7 @@
 <!DOCTYPE html>
-<html>
+<%@taglib prefix="c" uri="http://www.springframework.org/tags" %>
 <head>
-  <title>Music Hub</title>
-  
-  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
-  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <%@include file="header.jsp" %>
   
     <style>
   .carousel-inner > .item > img,
@@ -47,6 +43,7 @@
       <li class="active"><a href="#">Home</a></li>
       <li><a href="aboutus">About Us</a></li>
            <li><a href="contactus">Contact Us</a></li>
+                     <li><a href="allproducts">All products</a></li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
       <li><a href="signin">Login</a></li>
@@ -75,19 +72,19 @@
     <!-- Wrapper for slides -->
     <div class="carousel-inner" role="listbox">
       <div class="item active">
-        <img src="/resources/images/p1.jpg" >
+        <img src="<c:url value='/resources/images/p1.jpg'/>" >
       </div>
 
       <div class="item">
-        <img src="/resources/images/p2.jpg">
+      <img src="<c:url value='/resources/images/p2.jpg'/>" >
       </div>
     
       <div class="item">
-        <img src="/resources/images/p3.jpg" >
+        <img src="<c:url value='/resources/images/p3.jpg'/>" >
       </div>
 
       <div class="item">
-        <img src="/resources/images/p4.jpg" >
+         <img src="<c:url value='/resources/images/p4.jpg'/>" >
       </div>
     </div>
 
@@ -158,30 +155,29 @@
                 <div class="row" align="center">
                  <br>
 	                <div class="col-xs-4">
-		                <a href="#" ><img class="img-circle img-responsive" src="mymusichub/resources/images/p1.jpg" height="300" width="250"></img></a>
+		                <a href="#" ><img class="img-circle img-responsive" src="<c:url value='/resources/images/p5.jpg'/>"   height="300" width="250"></img></a>
 		               
-		                <a align="center" href="#" > Guitars </a>
+		                <a align="center" href="allproducts?item=Guitar" > Guitars </a>
 	                </div>
 	                
 	                <div class="col-xs-4">
-		                <a align="center" href="#" ><img class="img-circle img-responsive" src="/resources/images/p6.jpg"  height="300" width="250"></img></a>
+		                <a align="center" href="allproducts" ><img class="img-circle img-responsive" src="<c:url value='/resources/images/p6.jpg'/>"   height="300" width="250"></img></a>
 		                
-		                <a href="#" > Pianos </a>
+		             
+		                <a align="center" href="allproducts?item=Piano" > Piano </a>
 	                </div>
 	                
 	                <div class="col-xs-4">
-		                <a align="center" href="#" ><img class="img-circle img-responsive" src="/resources/images/p7.jpg"  height="300" width="250"></img></a>
+		                <a align="center" href="allproducts" ><img class="img-circle img-responsive" src="<c:url value='/resources/images/p7.jpg'/>"  height="300" width="250"></img></a>
 		                
-		                <a href="#" > Accessories </a>
+		                
+		                <a align="center" href="allproducts?item=Accessories" > Accessories </a>
 	                </div>
                 
                 </div>
-                
-                
-<footer class="footer" align="center">
-  <p><b>@copyright MISS KAUR</b></p></footer>
-</div>
 
+<%@include file="footer.jsp" %>      
+</div>
 
 </body>
 </html>
