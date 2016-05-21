@@ -1,6 +1,7 @@
 <!DOCTYPE html>
-<%@taglib prefix="c" uri="http://www.springframework.org/tags" %>
 <head>
+<%@taglib prefix="c" uri="http://www.springframework.org/tags" %>
+
   <%@include file="header.jsp" %>
   
     <style>
@@ -28,33 +29,6 @@
 
 
 
-<nav class="navbar navbar-inverse">
-
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span> 
-      </button>
-    </div>
-    <div class="collapse navbar-collapse" id="myNavbar">
-    <ul class="nav navbar-nav">
-      <li class="active"><a href="#">Home</a></li>
-      <li><a href="aboutus">About Us</a></li>
-           <li><a href="contactus">Contact Us</a></li>
-                     <li><a href="allproducts">All products</a></li>
-      </ul>
-      <ul class="nav navbar-nav navbar-right">
-      <li><a href="signin">Login</a></li>
-      <li><a href="signup">SignUp</a></li>
- 
-    </ul>
-  </div>
-</nav>
-  
-
-
-
 
 
 <div class="container">
@@ -66,24 +40,34 @@
       <li data-target="#myCarousel" data-slide-to="1"></li>
       <li data-target="#myCarousel" data-slide-to="2"></li>
       <li data-target="#myCarousel" data-slide-to="3"></li>
+           <li data-target="#myCarousel" data-slide-to="5"></li>
+      <li data-target="#myCarousel" data-slide-to="6"></li>
     </ol>
 
     <!-- Wrapper for slides -->
     <div class="carousel-inner" role="listbox">
       <div class="item active">
-        <img src="<c:url value='/resources/images/p1.jpg'/>" >
+        <img src="<c:url value='/resources/images/slideshow_1.jpg'/>" >
       </div>
 
       <div class="item">
-      <img src="<c:url value='/resources/images/p2.jpg'/>" >
+      <img src="<c:url value='/resources/images/slideshow_2.jpg'/>" >
       </div>
     
       <div class="item">
-        <img src="<c:url value='/resources/images/p3.jpg'/>" >
+        <img src="<c:url value='/resources/images/slideshow_3.jpg'/>" >
       </div>
 
       <div class="item">
-         <img src="<c:url value='/resources/images/p4.jpg'/>" >
+         <img src="<c:url value='/resources/images/slideshow_4.jpg'/>" >
+      </div>
+      
+      <div class="item">
+         <img src="<c:url value='/resources/images/slideshow_5.jpg'/>" >
+      </div>
+      
+      <div class="item">
+         <img src="<c:url value='/resources/images/slideshow_6.jpg'/>" >
       </div>
     </div>
 

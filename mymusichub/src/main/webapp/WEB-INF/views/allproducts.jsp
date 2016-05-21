@@ -4,11 +4,7 @@
 <html lang="en">
 <head>
   <title>Music Hub</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
-  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+ <%@include file="header.jsp" %>
        <style>
   .carousel-inner > .item > img,
   .carousel-inner > .item > a > img {
@@ -56,30 +52,7 @@
 
 <body ng-app='myApp'>
 
-	
-<nav class="navbar navbar-inverse">
 
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span> 
-      </button>
-    </div>
-    <div class="collapse navbar-collapse" id="myNavbar">
-    <ul class="nav navbar-nav">
-      <li><a href="index">Home</a></li>
-      <li><a href="aboutus">About Us</a></li>
-           <li><a href="contactus">Contact Us</a></li>
-                     <li  class="active"><a href="allproducts">All products</a></li>
-      </ul>
-      <ul class="nav navbar-nav navbar-right">
-      <li><a href="signin">Login</a></li>
-      <li><a href="signup">SignUp</a></li>
- 
-    </ul>
-  </div>
-</nav>
 
 	<br>
 	<br>
@@ -148,11 +121,9 @@
 				</div>
 				<!--  -->								
 		
-</script>
+
 <br></br><br></br><br></br>
 <%@include file="footer.jsp" %> 
-     </div>
-</nav> 
-</div>
+    
 </body>
 
